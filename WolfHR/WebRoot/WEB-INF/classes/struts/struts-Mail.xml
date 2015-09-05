@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <constant value="400000000" name="struts.multipart.maxSize"/>
+  <package name="mail" namespace="/" extends="checkdefault">
+  	<action name="mailAction_*" method="{1}" class="mailAction">
+  		<result name="inbox">WEB-INF/jsp/mail/inbox.jsp</result>
+  		<result name="addUI">WEB-INF/jsp/mail/sendUI.jsp</result>
+  		<result name="outbox">WEB-INF/jsp/mail/outbox.jsp</result>
+  		<result name="draftbox">WEB-INF/jsp/mail/draftbox.jsp</result>
+  		<result name="update">WEB-INF/jsp/mail/updateUI.jsp</result>
+  		<result name="seemail">/WEB-INF/jsp/mail/see.jsp</result>
+		<result name="listAction">/WEB-INF/jsp/mail/maillist.jsp</result>
+		<result name="getALLmail" type="redirectAction">mailAction_getALLmail.action</result>
+  		<result name="draftboxList" type="redirect">mailAction_draftboxList.action</result>
+		<result name="action2action" type="redirect">mailAction_outboxList.action</result>
+		<result name="deleteDraftMail" type="redirect">mailAction_draftboxList.action</result>
+		<result name="deleteFromoutbox" type="redirect">mailAction_outboxList.action</result>
+		<result name="deleteFrominbox" type="redirect">mailAction_inboxList.action</result>
+  	</action>	
+  	<action name="download_*" method="{1}" class="mailAction">
+				<result name="success" type="stream">
+					  <param name="contentType">%{#myFileContentType}</param>
+					  <param name="inputName">stream</param>
+					  <param name="contentDisposition">attachment;filename="%{#myFileFileName}"</param>
+					  <param name="bufferSize">1024</param>
+				</result>		
+	</action>			
+  </package>
+</struts>	

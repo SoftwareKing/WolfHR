@@ -1,0 +1,22 @@
+.inputdate {
+	border:1px solid #7287c6;
+	font-size: 10pt;
+	font-style: normal;
+	height: 16px;
+}
+
+.DateButton {
+	border: solid 1px #000000;
+	background: #deecf7;
+	width: 15px;
+	height: 16px;
+	font-family: ËÎÌו;
+	font-size: 6Pt;
+}
+
+.updownStyle {
+	width: 15px;
+	height: 7px;
+	font-family: ËÎÌו;
+	font-size: 6Pt;
+}

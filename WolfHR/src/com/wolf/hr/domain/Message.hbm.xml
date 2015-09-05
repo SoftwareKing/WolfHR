@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wolf.hr.domain.Message" table="message">
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="title" type="java.lang.String"></property>
+		<property name="content" type="java.lang.String" length="1000"></property>
+		<property name="hasRead" type="java.lang.Boolean"></property>
+		<property name="deleteFromOutbox" type="java.lang.Boolean"></property>
+		<property name="deleteFromInbox" type="java.lang.Boolean"></property>
+		<property name="priority" type="java.lang.Integer"></property>
+		<property name="sendTime" type="timestamp"></property>
+		<property name="status" type="java.lang.Integer"></property>
+		<many-to-one name="sender" class="com.wolf.hr.domain.User">
+			<column name="senderId"></column>
+		</many-to-one>
+		<many-to-one name="receiver" class="com.wolf.hr.domain.User">
+			<column name="receiverId"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

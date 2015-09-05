@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+   <!-- 配置文件改了以后不用重新启动 -->
+   <constant name="struts.devMode" value="true"/>
+   <constant name="struts.ui.theme" value="simple"/>
+   <package name="checkdefault" namespace="/" extends="struts-default">
+   	<!-- 配置拦截器 -->
+		<interceptors>
+			<!-- 声明拦截器 -->
+			<interceptor name="checkPrivilege" class="com.wolf.hr.interceptor.CheckPrivilegeInterceptor"></interceptor>
+			
+			<!-- 声明拦截器栈 -->
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="checkPrivilege" />
+				<interceptor-ref name="defaultStack" />
+				 
+				 <!-- 配置使用自定义拦截器 -->
+                <interceptor-ref name="checkPrivilege"/>
+                
+			</interceptor-stack>
+		</interceptors>
+
+		<!-- 默认本包中的所有action都要经过myStack这个拦截器栈 -->
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+			
+		<!-- 全局的result配置 -->
+		<global-results>
+			<result name="input">/input.jsp</result>
+			<result name="loginUI">/WEB-INF/jsp/frame/login.jsp</result>
+			<result name="privilegeError">/WEB-INF/jsp/frame/login.jsp</result>
+		</global-results>
+   	
+   	</package>
+   
+   
+		
+		
+   <include file="struts/struts-department.xml"></include>
+   <include file="struts/struts-post.xml"></include>
+   <!--  -->
+   <include file="struts/struts-usergroup.xml"></include>
+   <include file="struts/struts-user.xml"></include>
+   
+   
+     <include file="struts/struts-Message.xml"></include>
+     <include file="struts/struts-AddWorking.xml"></include>
+     <include file="struts/struts-Leave.xml"></include>
+     <include file="struts/struts-Attendance.xml"></include>
+	 <include file="struts/struts-Mail.xml"></include>
+   
+   <include file="struts/struts-usermanger.xml"></include>
+  
+   <include file="struts/struts-menuitem.xml"></include>
+   <include file="struts/struts-privilege.xml"></include>
+   <include file="struts/struts-login.xml"></include>
+   <include file="struts/struts-forward.xml"></include>
+   <include file="struts/struts-useredu.xml"></include>
+    <include file="struts/struts-userwork.xml"></include>
+	<include file="struts/struts-userlizhi.xml"></include>
+	
+	<include file="struts/struts-performance.xml"></include>
+	
+	<include file="struts/struts-workflow.xml"></include>
+	
+	<include file="struts/struts-pdmanager.xml"></include>
+
+	<include file="struts/struts-formtemplate.xml"></include>
+	
+	<include file="struts/struts-securitycode.xml"></include>
+	
+	<include file="struts/struts-SalaryType.xml"></include>
+	<include file="struts/struts-SalaryInfo.xml"></include>
+	<include file="struts/struts-IncomeAndPayment.xml"></include>
+   
+   <package name="ajax" extends="struts-default">
+		<result-types>
+			<result-type name="ajaxResult" class="com.wolf.hr.result.AjaxResult"></result-type>
+		</result-types>
+		
+  </package>
+ 
+  
+   
+</struts>	

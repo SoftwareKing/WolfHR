@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+ 	<package name="forward" namespace="/" extends="checkdefault">
+ 		<action name="forwardAction_*" method="{1}" class="com.wolf.hr.struts2.action.ForwardAction">
+ 			<result name="left">WEB-INF/jsp/frame/left.jsp</result>
+ 			<result name="top">WEB-INF/jsp/frame/top.jsp</result>
+ 			<result name="right">WEB-INF/jsp/frame/right.jsp</result>
+ 			<result name="bottom">WEB-INF/jsp/frame/bottom.jsp</result>
+			<!--
+ 			<result name="kynamic">WEB-INF/jsp/kynamic/kynamic.jsp</result>
+			-->
+ 		</action>
+ 	</package>
+</struts>	

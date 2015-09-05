@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  	<package name="usergroup" namespace="/" extends="checkdefault">
+  		<action name="userGroupAction_*"  method="{1}" class="userGroupAction">
+  			<result name="listAction">WEB-INF/jsp/usergroup/list.jsp</result>
+  			<result name="addUI">WEB-INF/jsp/usergroup/add.jsp</result>
+  			<result name="updateUI">WEB-INF/jsp/usergroup/update.jsp</result>
+  			<result type="redirectAction" name="action2action">userGroupAction_getAllUserGroup.action</result>
+  		</action>
+  	</package>
+</struts>	

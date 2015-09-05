@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="incomeAndPayment" namespace="/" extends="checkdefault">
+  	<action name="incomeAndPaymentAction_*" method="{1}" class="incomeAndPaymentAction">
+  		<result name="addUI">/WEB-INF/jsp/salary/addIncomeAndPayment.jsp</result>
+  	     <result name="listAction">WEB-INF/jsp/salary/IncomeAndPaymentList.jsp</result>
+		<result name="action2action" type="redirectAction">incomeAndPaymentAction_getALLIncomeAndPayment.action</result>
+		<result name="updateUI">WEB-INF/jsp/salary/updateIncomeAndPayment.jsp</result>
+		
+	</action>	
+  </package>
+</struts>	

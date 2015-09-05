@@ -1,0 +1,102 @@
+
+body {
+    background: none repeat scroll 0 0 #FFFFEE;
+    font-size: 12px;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+	background-image: url("../image/wolf.gif");
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	background-color:black;
+	background-attachment:scroll;
+
+}
+#mainDiv {
+    height: 100%;
+    width: 100%;
+}
+#loveHeart {
+    float: left;
+    height: 625px;
+    width: 670px;
+}
+#garden {
+    height: 100%;
+    width: 100%;
+}
+#elapseClock {
+	color:red;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+#words {
+    color: #666666;
+    font-family: "sans-serif";
+    font-size: 24px;
+    width: 505px;
+}
+#messages {
+	color:red;
+    display: none;
+}
+#elapseClock .digit {
+    font-family: "digit";
+    font-size: 36px;
+}
+#loveu {
+    display: none;
+    font-size: 22px;
+    margin-right: 120px;
+    margin-top: 80px;
+    padding: 5px;
+    text-align: right;
+}
+#loveu .signature {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+}
+#code {
+    color: #333333;
+    float: left;
+    font-family: "Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";
+    font-size: 20px;
+    height: 400px;
+    width: 440px;
+}
+#code .string {
+    color: #2A36FF;
+}
+#code .keyword {
+    color: #7F0055;
+    font-weight: bold;
+}
+#code .placeholder {
+    margin-left: 15px;
+}
+#code .space {
+    margin-left: 7px;
+}
+#code .comments {
+    color: #3F7F5F;
+}
+#copyright {
+    color: #666666;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+#errorMsg {
+    font-size: 24px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+}
+#copyright a {
+    color: #666666;
+}

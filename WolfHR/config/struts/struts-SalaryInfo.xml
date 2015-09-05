@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="salaryInfo" namespace="/" extends="checkdefault">
+  	<action name="salaryInfoAction_*" method="{1}" class="salaryInfoAction">
+  		<result name="addUI">/WEB-INF/jsp/salary/addSalaryInfo.jsp</result>
+  		<result name="actionList">/WEB-INF/jsp/salary/listAllSalaryInfo.jsp</result>
+  		<result name="action">/WEB-INF/jsp/salary/listNowMonth.jsp</result>
+		<result name="actionDate">/WEB-INF/jsp/salary/SalaryHistory.jsp</result>
+  	</action>	
+  	
+  </package>
+</struts>	

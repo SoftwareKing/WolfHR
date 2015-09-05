@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="message" namespace="/" extends="checkdefault">
+  	<action name="messageAction_*" method="{1}" class="messageAction">
+  		<result name="inbox">WEB-INF/jsp/message/inbox.jsp</result>
+  		<result name="addUI">WEB-INF/jsp/message/sendUI.jsp</result>
+  		<result name="outbox">WEB-INF/jsp/message/outbox.jsp</result>
+  		<result name="draftbox">WEB-INF/jsp/message/draftbox.jsp</result>
+  		<result name="update">WEB-INF/jsp/message/updateUI.jsp</result>
+  		<result name="seeMessage">/WEB-INF/jsp/message/see.jsp</result>
+  		<result name="draftboxList" type="redirect">messageAction_draftboxList.action</result>
+		<result name="action2action" type="redirect">messageAction_outboxList.action</result>
+		<result name="deleteDraftMessage" type="redirect">messageAction_draftboxList.action</result>
+		<result name="deleteFromoutbox" type="redirect">messageAction_outboxList.action</result>
+		<result name="deleteFrominbox" type="redirect">messageAction_inboxList.action</result>
+  	</action>						
+  </package>
+</struts>	

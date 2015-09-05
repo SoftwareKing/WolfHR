@@ -1,0 +1,375 @@
+A:link {
+	COLOR: #005893;
+	TEXT-DECORATION: none;
+}
+
+A:visited {
+	COLOR: #005893;
+	TEXT-DECORATION: none
+}
+
+A:active {
+	COLOR: #005893;
+	TEXT-DECORATION: none
+}
+
+A:hover {
+	COLOR: #0000ff;
+	TEXT-DECORATION: underLine;
+}
+
+body {
+	background-color: #ffffff;
+	overflow: scroll;
+	overflow-y: hidden;
+	font-size: 12px;
+}
+
+ul {
+	margin: 0px;
+	list-style-type: none;
+	padding:0px;
+}
+
+#Top {
+	margin-left:1px;
+	height: 20px;
+	width: 100%;
+	background-color: #4891c6;
+	padding-left: 5px;
+	padding-bottom: 3px;
+}
+
+#Top ul {
+	margin: 0px;
+	list-style-type: none;
+	padding-top: 5px;
+	height: 17px;
+}
+
+#Top li {
+	border-right: 1px solid #9cc2df;
+	float: left;
+	font-size: 12px;
+	font-family: ËÎÌו;
+	color: #b9d3e7;
+	padding-left: 4px;
+	padding-right: 4px;
+	cursor: pointer;
+}
+
+#Top img {
+	margin-bottom: -2px;
+}
+
+#Top A{
+	color: #b9d3e7;
+	TEXT-DECORATION: none;
+}
+
+#Content {
+	overflow-y: auto;
+	padding-left: 4px;
+	padding-right: 4px;
+	scrollbar-base-color: #dbecf8;
+	scrollbar-arrow-color: #2a8ed1;
+	scrollbar-track-color: #bdddf2;
+	scrollbar-3dlight-color: #2886c5;
+	scrollbar-darkshadow-color: #2886c5;
+	scrollbar-face-color: #dbecf8;
+	scrollbar-shadow-color: #dbecf8;
+}
+
+#DesktopBlock {
+	float: left;
+	width: 100%;
+}
+
+#Block {
+	margin-left: 3px;
+	margin-right: 3px;
+	border: 1px solid #4891c6;
+	background-color: #ffffff;
+	margin-top: 6px;
+}
+
+#BlockHead {
+	height: 21px;
+	background:url(images/htmlTitlebg.jpg) repeat-x left top !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#a1c6e2,endcolorstr=#e1e8f0,gradientType=0);
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding-top: 2px;
+	padding-left: 5px;
+}
+
+#BlockHead td {
+	font-weight: bold;
+	font-size: 13px;
+	color: #005892;
+}
+
+#BlockHead img {
+	margin: 2px;
+	cursor: pointer;
+}
+
+#BlockDetail {
+	height:105px;
+	padding-right: 7px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.AdageTopLeft {
+	background: url(images/adage_top_left.gif) no-repeat;
+}
+
+.AdageTopRight {
+	background: url(images/adage_top_right.gif) no-repeat;
+}
+
+.AdageBottomLeft {
+	background: url(images/adage_bottom_left.gif) no-repeat;
+}
+
+.AdageBottomRight {
+	background: url(images/adage_bottom_right.gif) no-repeat;
+}
+
+.BlockDetailByAdage {
+	background: #d1e2f0;
+	text-align: left;
+}
+
+.BlockDetailByAddressQuery {
+	width: 100%;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.BlockDetailByAwoke {
+	height: 100px;
+	padding: 6px;
+}
+
+.AwokeButton {
+	background: url(images/awokeBtn_bg.gif) repeat-x;
+	cursor: pointer;
+	height: 30px;
+	width: 150px;
+	border: 1px solid #bddcf4;
+	color: #005893;
+	line-height: 28px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.AwokeNum {
+	font-weight: bold;
+	color: #ff9700;
+}
+
+.BlockMemo {
+	width:99.9%;
+	height: 137px;
+	padding-top: 30px;
+	margin-top: 1px;
+	padding-bottom:1px;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.DetailLine {
+	width: 100%;
+	height: 19px;
+	line-height: 18px;
+	color: #005893;
+	padding-left: 4px;
+	list-style-type: none;
+	border-bottom: solid 1px #c4d3e1;
+}
+
+.EndDetailLine {
+	width: 100%;
+	height: 19px;
+	line-height: 18px;
+	color: #005893;
+	padding-left: 4px;
+	list-style-type: none;
+}
+
+.DetailLineInfo {
+	float: left;
+	color: #005893;
+	text-align:left;
+}
+
+.DetailLineName {
+	float: right;
+	padding-right: 10px;
+	color: #9f9f9f;
+}
+
+.DetailLineTime {
+	float: right;
+	width: 38px;
+	height: 14px;
+	background: url(images/date_bg.gif) no-repeat;
+	text-align: center;
+	font-size: 12px;
+	color: #9f9f9f;
+}
+
+#BlockFoot {
+	height: 22px;
+	padding-right: 11px;
+	padding-top: 5px;
+	background:url(images/htmlbg.jpg) repeat-x left bottom !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#eaeaea,endcolorstr=#ffffff,gradientType=0);
+}
+
+#BlockFootMore {
+	float: right;
+	font-size: 12px;
+}
+
+#BlockFootMore A {
+	COLOR: #005791;
+	TEXT-DECORATION: none;
+}
+
+#Votting {
+	height: 142px;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+}
+
+#Votting li {
+	line-height: 25px;
+	color: #005892;
+	font-size: 13px;
+}
+
+#VottingHeader {
+	border-bottom: solid 1px #abcce4;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#AddressQuery {
+	list-style-type: none;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#AddressQuery li {
+	line-height: 30px;
+	color: #005892;
+	font-size: 13px;
+	padding-bottom: 5px;
+}
+
+.InputStyle {
+	BORDER-TOP: #91c0e3 1px solid; 
+	BORDER-BOTTOM: #91c0e3 1px solid; 
+	BORDER-LEFT: #91c0e3 1px solid; 
+	BORDER-RIGHT: #91c0e3 1px solid; 
+	width: 100%;
+	HEIGHT: auto; 
+	BACKGROUND-COLOR: #FFFFFF;
+	color: #004779;
+}
+
+.ButtonStyle {
+	height: 20px;
+	color: #004a7d;
+	cursor: pointer;
+	padding: 0 8px;
+	border-top: 0px solid #87a3c1 !important;
+	border: 1px solid #87a3c1;
+	background:url("images/func_btn_bg.gif") repeat-x !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff,endcolorstr=#c5e7ff,gradientType=0);
+}
+
+.QueryButton {
+	border: 1px solid #87a3c1;
+	background: url(images/search.gif) no-repeat;
+	color: #004a7d;
+	padding-left: 16px;
+	padding-right: 8px;
+	padding-top: 1px;
+	height: 20px;
+}
+
+.Text_area_style {
+	border: 1px solid #87a3c1;
+	background: #fff;
+	color: #004a7d;
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+}
+
+#AwokeInfo {
+	list-style-type: none;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+#AwokeInfo li {
+	line-height: 25px;
+	color: #005892;
+	font-size: 13px;
+}
+
+#pictureContent {
+	margin: 0;
+	float:left;
+	color: #005892;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+#pictureContent li{
+	text-align: left;
+	line-height: 18px;
+	text-indent: 2em;
+}
+
+.WeatherCity {
+	color: #a9a9a9;
+	font-size: 12px;
+	width: 100%;
+}
+
+.WeatherCurrent {
+	font-size: 14px;
+	color: #1C83CB;
+	font-family: ËÎÌו;
+	font-weight: bold;
+	float: left;
+	margin-right: 15px;
+	padding-top: 8px;
+}
+
+#WeatherDetail {
+	float: left;
+	font-size: 12px;
+	color: #1C83CB;
+	font-family: ËÎÌו;
+	padding-left: 10px;
+	margin: 0;
+}
+
+.WeatherMemo {
+	color: #1C83CB;
+	font-size: 12px;
+	width: 100%;
+	float: left;
+	margin-top: 8px;
+}
+

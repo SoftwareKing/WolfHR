@@ -1,0 +1,116 @@
+A.Wait:link {
+	COLOR: red; TEXT-DECORATION: font-weight:bolder;
+}
+A.Wait:visited {
+	COLOR: #000000; TEXT-DECORATION: font-weight:bolder;
+}
+A.Wait:active {
+	COLOR: #00A7FF; TEXT-DECORATION: font-weight:bolder;
+}
+A.Wait:hover {
+	COLOR: #00A7FF; TEXT-DECORATION: underline;
+}
+
+A.Default:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.Default:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.Default:active {
+	COLOR: #00A7FF; TEXT-DECORATION: none
+}
+A.Default:hover {
+	COLOR: #00A7FF; TEXT-DECORATION: underline;
+}
+
+A.top:link {
+	COLOR: blue; TEXT-DECORATION: font-weight:bolder;
+}
+A.top:visited {
+	COLOR: #000000; TEXT-DECORATION: font-weight:bolder;
+}
+A.top:active {
+	COLOR: #00A7FF; TEXT-DECORATION: font-weight:bolder;
+}
+A.top:hover {
+	COLOR: #00A7FF; TEXT-DECORATION: font-weight:bolder;
+}
+
+A.Green:link {
+	COLOR: green; 
+	text-decoration: line-through;
+}
+A.Green:visited {
+	COLOR: #000000; 
+	text-decoration: line-through;
+}
+A.Green:active {
+	COLOR: #00A7FF; 
+	text-decoration: line-through;
+}
+A.Green:hover {
+	COLOR: #00A7FF; 
+	text-decoration: line-through;
+}
+
+#MsgInfo {
+	border-top: 1px solid #ABD9FB;
+	border-bottom: 1px solid #ABD9FB;
+	padding: 8px;
+	background-color:#E5F2FA;
+}
+
+#MsgInfo ul {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0px;
+	width: 100%;
+	float: left;
+}
+
+.MsgTitle {
+	line-height: 25px;
+	border-bottom: 1px solid #c8c8c8;
+	border-top: 0px solid #fff;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #004a7d;
+	font-size: 13px;
+}
+
+.MsgInfoMiddle {
+	line-height: 25px;
+	border-bottom: 1px solid #c8c8c8;
+	border-top: 1px solid #fff;
+	padding-left: 10px;
+}
+
+.MsgReceiver {
+	line-height: 25px;
+	border-bottom: 0 solid #fff;
+	border-top: 1px solid #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+#MsgContent {
+	border-top: 1px solid #c8c8c8;
+	overflow: auto;
+	height: 100%;
+}
+
+.ShowContentText {
+	padding: 10px;	
+	width: 100%;
+	height: 99%;
+	overflow: auto;
+	background-color: #fff;
+	border: 0 solid #000;
+}
+
+#FileDownLoadArea {
+	width:81% !important; 
+	width:100%;
+}

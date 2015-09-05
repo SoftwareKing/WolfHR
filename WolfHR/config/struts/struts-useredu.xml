@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="useredu" namespace="/"  extends="checkdefault">
+  	<action name="usereduAction_*" method="{1}" class="usereduAction">
+  	
+  		<result name="listAction">WEB-INF/jsp/user/useredulist.jsp</result>
+	
+  		
+		<result name="updateUI">WEB-INF/jsp/user/updateuseredu.jsp</result>
+		
+		<result name="action2action" type="redirectAction">usereduAction_getAllUserEdu.action</result>
+  		<result name="addUI">WEB-INF/jsp/user/adduseredu.jsp</result>
+  		
+  	</action>
+  </package>
+</struts>	

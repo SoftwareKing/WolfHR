@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.wolf.hr.domain.User" table="user">
+        <id name="uid" type="java.lang.Long" length="15">
+            <column name="uid">
+            </column>
+            <generator class="increment">
+            </generator>
+        </id>
+        <property name="Jobnumber" type="java.lang.String" length="20">
+        </property>
+        <property name="username" type="java.lang.String" length="20">
+        </property>
+        <property name="password" type="java.lang.String" length="50">
+        </property>
+        <property name="major" type="java.lang.String" length="20"></property>
+        <property name="idcard" type="java.lang.String" length="20">
+        </property>
+        <property name="birthday" type="java.lang.String" length="20">
+        </property>
+        <property name="jiguan" type="java.lang.String" length="20">
+        </property>
+        <property name="hukou" type="java.lang.String" length="20">
+        </property>
+        <property name="hunyin" type="java.lang.String" length="8">
+        </property>
+        <property name="xuexing" type="java.lang.String" length="5">
+        </property>
+        
+        <property name="gradue" type="java.lang.String" length="20">
+        </property>
+        <property name="rusidate" type="java.lang.String" length="20">
+        </property>
+        <property name="xuewei" type="java.lang.String" length="20">
+        </property>
+        <property name="waiyu" type="java.lang.String" length="20">
+        </property>
+        <property name="secondwaiyu" type="java.lang.String" length="20">
+        </property>
+        
+        
+        <property name="techang" type="java.lang.String" length="20">
+        </property>
+        <property name="phone" type="java.lang.String" length="20">
+        </property>
+        <property name="jinjiren" type="java.lang.String" length="20">
+        </property>
+        <property name="zhuanzhengriqi" type="java.lang.String" length="20">
+        </property>
+        <property name="zhichen" type="java.lang.String" length="20">
+        </property>
+        
+        <property name="mingzu" type="java.lang.String" length="5">
+        </property>
+        <property name="sex" type="java.lang.String" length="20">
+        </property>
+        <property name="englishname" type="java.lang.String" length="20">
+        </property>
+        <property name="juzhudizhi" type="java.lang.String" length="20">
+        </property>
+        <property name="zhengzhimianmao" type="java.lang.String" length="20">
+        </property>
+        <property name="xueli" type="java.lang.String" length="20">
+        </property>
+        
+        
+        <property name="firstworktime" type="java.lang.String" length="20">
+        </property>
+        <property name="gradueschool" type="java.lang.String" length="20">
+        </property>
+        <property name="waiyujibie" type="java.lang.String" length="20">
+        </property>
+        <property name="secondwaiyujibie" type="java.lang.String" length="20">
+        </property>
+        <property name="likes" type="java.lang.String" length="20">
+        </property>
+        <property name="email" type="java.lang.String" length="20">
+        </property>
+        <property name="jinjirenphone" type="java.lang.String" length="20">
+        </property>
+        <property name="employstate" type="java.lang.String" length="20">
+        </property>
+        
+        
+        
+        <property name="zhengshu" type="java.lang.String" length="20">
+        </property>
+        <property name="gongzuolvli" type="java.lang.String" length="20">
+        </property>
+        
+        <property name="jianliurl" type="java.lang.String" length="200"></property>
+        <property name="photourl" type="java.lang.String" length="200"></property>
+        
+        
+		<!--用户和用户的自己的关联-->
+		 
+		
+		 <set name="useredu" inverse="true" cascade="all">
+			<key>
+				<column name="uid"></column>
+			</key>
+			<one-to-many class="com.wolf.hr.domain.UserEdu"/>
+		</set>
+		 
+		  
+		
+		 <set name="userwork" inverse="true" cascade="all">
+			<key>
+				<column name="uid"></column>
+			</key>
+			<one-to-many class="com.wolf.hr.domain.UserWork"/>
+		</set>
+		
+		 
+        <!--用户与其他管理的关联 -->
+       
+        <many-to-one name="department" class="com.wolf.hr.domain.Department" column="did">
+        </many-to-one>
+        
+        <set name="posts" table="user_post" lazy="false">
+            <key>
+                <column name="uid">
+                </column>
+            </key>
+            <many-to-many class="com.wolf.hr.domain.Post" column="pid">
+            </many-to-many>
+        </set>
+        <set name="usergroups" table="user_usergroup" lazy="false">
+            <key>
+                <column name="uid">
+                </column>
+            </key>
+            <many-to-many class="com.wolf.hr.domain.UserGroup" column="ugid">
+            </many-to-many>
+        </set>
+        <set name="menuitems" table="user_menuitem" lazy="false">
+            <key>
+                <column name="uid">
+                </column>
+            </key>
+            <many-to-many class="com.wolf.hr.domain.Menuitem" column="mid">
+            </many-to-many>
+        </set>
+		
+		<set name="sendMessages" cascade="all" >
+			<key column="senderId"></key>
+			<one-to-many class="com.wolf.hr.domain.Message"/>
+		</set>
+		<set name="receiveMessages" cascade="all">
+			<key column="receiverId"></key>
+			<one-to-many class="com.wolf.hr.domain.Message"/>
+		</set>
+		<set name="sendMail" cascade="all" >
+			<key column="senderId"></key>
+			<one-to-many class="com.wolf.hr.domain.Mail"/>
+		</set>
+		<set name="receiveMail" cascade="all">
+			<key column="receiverId"></key>
+			<one-to-many class="com.wolf.hr.domain.Mail"/>
+		</set>
+		<set name="addWorks" cascade="all">
+			<key column="userId"></key>
+			<one-to-many class="com.wolf.hr.domain.AddWorking"/>
+		</set>
+		
+		<set name="leaves" cascade="all">
+			<key column="userId"></key>
+			<one-to-many class="com.wolf.hr.domain.Leave"/>
+		</set>
+		
+		<set name="attendances" cascade="all">
+			<key column="userId"></key>
+			<one-to-many class="com.wolf.hr.domain.Attendance"/>
+		</set>
+		<set name="allAtts" cascade="all">
+			<key column="attUserId"></key>
+			<one-to-many class="com.wolf.hr.domain.Attendance"/>
+		</set>
+
+		<set name="salaryInfos" cascade="all" >
+			<key column="userId"></key>
+			<one-to-many class="com.wolf.hr.domain.SalaryInfo"/>
+		</set>
+
+
+		
+    </class>
+</hibernate-mapping>

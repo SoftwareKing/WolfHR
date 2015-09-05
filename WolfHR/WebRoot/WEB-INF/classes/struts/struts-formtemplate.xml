@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  	<package name="formTemplate" namespace="/" extends="checkdefault">
+  		<action name="formTemplateAction_*" method="{1}" class="formTemplateAction">
+  			<result name="listAction">WEB-INF/jsp/workflow/formTemplateList.jsp</result>
+  			<result name="addUI">WEB-INF/jsp/workflow/formTemplate_addUI.jsp</result>
+  			<result name="action2action" type="redirectAction">formTemplateAction_getAllFormTemplate.action</result>
+  			<result name="updateUI">WEB-INF/jsp/workflow/formTemplate_update.jsp</result>
+			<result type="stream">
+  				<!-- 
+					输入流的名字
+					   用来获取inputStream
+				-->
+				<param name="contentType">application/octet-stream</param>
+				<param name="inputName">inputStream</param>
+				<!-- 名称的名字 -->
+				<param name="contentDisposition">
+					<!-- 
+						应用ognl表达式动态显示要下载的文件的名字
+					-->
+					attachment;filename="${#fileName}.doc"
+				</param>
+  			</result>
+  		</action>
+  	</package>
+</struts>	

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="WolfHR"
+  id="myeclipse.1354418417781"
+  context-root="/WolfHR"
+  j2ee-spec="5.0"
+  archive="WolfHR.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

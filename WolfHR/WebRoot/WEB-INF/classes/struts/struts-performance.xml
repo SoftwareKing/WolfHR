@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="performance" namespace="/"  extends="checkdefault">
+  	<action name="performanceAction_*" method="{1}" class="performanceAction">
+  		<result name="listAction">WEB-INF/jsp/performance/list.jsp</result>
+  		<result name="action2action" type="redirectAction">performanceAction_getAllPerformance.action</result>
+  		<result name="addUI">WEB-INF/jsp/performance/add.jsp</result>
+  		<result name="updateUI">WEB-INF/jsp/performance/update.jsp</result>
+		<result name="importUI">WEB-INF/jsp/performance/userimport.jsp</result>
+		<result name="person">WEB-INF/jsp/performance/personalpflist.jsp</result>
+		
+  	</action>
+  </package>
+</struts>	

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+    <property name="dialect">
+		org.hibernate.dialect.MySQL5InnoDBDialect
+   </property>
+   <!--  
+	<property name="connection.url">
+		jdbc:mysql://localhost:3306/hr?characterEncoding=utf-8
+	</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">root</property>
+	<property name="connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="myeclipse.connection.profile">mysql</property>
+	-->
+	<property name="show_sql">true</property>
+	<property name="hbm2ddl.auto">update</property>
+	
+	<!-- 
+		<property name="current_session_context_class">thread</property>
+	-->
+	<mapping resource="com/wolf/hr/domain/Department.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Post.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/User.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/UserGroup.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Menuitem.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/UserEdu.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/UserManger.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/UserWork.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Message.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/UserLizhi.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Performance.hbm.xml" />
+	
+
+	<mapping resource="jbpm.repository.hbm.xml" />
+	<mapping resource="jbpm.execution.hbm.xml" />
+	<mapping resource="jbpm.history.hbm.xml" />
+	<mapping resource="jbpm.task.hbm.xml" />
+	<mapping resource="jbpm.identity.hbm.xml" />
+	
+	
+	<mapping resource="com/wolf/hr/domain/Approve.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Form.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/FormTemplate.hbm.xml" />
+
+    <mapping resource="com/wolf/hr/domain/AddWorking.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Attendance.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Leave.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/Mail.hbm.xml" />
+	
+	<mapping resource="com/wolf/hr/domain/IncomeAndPayment.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/SalaryInfo.hbm.xml" />
+	<mapping resource="com/wolf/hr/domain/SalaryType.hbm.xml" />
+</session-factory>
+</hibernate-configuration>

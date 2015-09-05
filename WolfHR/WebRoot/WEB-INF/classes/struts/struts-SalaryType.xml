@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="salaryType" namespace="/" extends="checkdefault">
+  	<action name="salaryTypeAction_*" method="{1}" class="salaryTypeAction">
+  		<result name="addUI">WEB-INF/jsp/salary/addSalaryType.jsp</result>
+		<result name="listAction">WEB-INF/jsp/salary/SalaryTypeList.jsp</result>
+		<result name="action2action" type="redirectAction">salaryTypeAction_getAllSalaryType.action</result>
+		<result name="updateUI">WEB-INF/jsp/salary/updateSalaryType.jsp</result>
+		
+  	</action>	
+  	
+  </package>
+</struts>	

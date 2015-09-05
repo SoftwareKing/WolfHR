@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="addWork" namespace="/" extends="checkdefault">
+  	<action name="addWorkingAction_*" method="{1}" class="addWorkingAction">
+  		<result name="addUI">/WEB-INF/jsp/addwork/add.jsp</result>
+  		<result name="listAction">/WEB-INF/jsp/addwork/list.jsp</result>
+  		<result name="action2action">/WEB-INF/jsp/addwork/return.jsp</result>
+  		<result name="listAll" type="redirect">addWorkingAction_getAllAddWorking_audit.action</result>
+  		<result name="updateList">/WEB-INF/jsp/addwork/listAll.jsp</result>
+  	</action>	
+  	
+  </package>
+</struts>	

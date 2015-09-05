@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.wolf.hr.domain.UserWork" table="userwork">
+        <id name="uwid" type="java.lang.Long" length="10">
+            <column name="uwid">
+            </column>
+            <generator class="increment">
+            </generator>
+        </id>
+	    <property name="companyname" type="java.lang.String" length="20"></property>
+		<property name="majorwork" type="java.lang.String" length="20"></property>
+		<property name="starttime" type="java.lang.String" length="20"></property>
+		<property name="endtime" type="java.lang.String" length="20"></property>
+		<property name="yeji" type="java.lang.String" length="20"></property>
+		<property name="description" type="java.lang.String" length="20"></property>
+		
+        <many-to-one name="users" class="com.wolf.hr.domain.User" column="uid" cascade="all">
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="leave" namespace="/" extends="checkdefault">
+  	<action name="leaveAction_*" method="{1}" class="leaveAction">
+  		<result name="addUI">/WEB-INF/jsp/leave/add.jsp</result>
+  		<result name="listAction">/WEB-INF/jsp/leave/list.jsp</result>
+  		<result name="action2action">/WEB-INF/jsp/leave/return.jsp</result>
+  		<result name="listAll" type="redirect">leaveAction_getAllLeaves_audit.action</result>
+  		<result name="updateList">/WEB-INF/jsp/leave/listAll.jsp</result>
+  	</action>	
+  	
+  </package>
+</struts>	

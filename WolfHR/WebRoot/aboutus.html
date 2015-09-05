@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>欢迎来到齐齐哈尔大学--烽火狼软件团队</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<embed src="./mic/1.swf" windth="0" height="0">>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/>
+				<span class="comments">* What is our Team？</span><br />
+				<span class="space"/><span class="comments"> * So I write some code to introduce our team.*/</span><br />
+				CEO Xu= <span class="keyword">new</span> CEO(<span class="string">"XuJin"</span>);<br />
+				DemandManager Du= <span class="keyword">new</span> DemandManager(<span class="string">"DuWeiJi"</span>);<br />
+				TestManager Yang= <span class="keyword">new</span> TestManager(<span class="string">"YangPeng"</span>);<br />
+				<span class="comments">/* May 20, 2013, We got together.*/ </span><br />
+				We got to know each other;<br />
+				<span class="comments">/* Luckily, We all have a common interest.*/</span><br />
+				So,We soon become a team;<br />
+				<span class="comments">/* Since then, We worked together.*/</span><br />
+				Do our best to complete our Website;<br />
+				<span class="comments">/* Year after year, day after day.*/</span><br />
+				We did it;No matter how hard, we all insist on.<br />
+				<span class="comments">/* Here, we have happiness, sadness,also there is failure, with success.*/</span><br />
+				In this team, Everyone has a different role<br />
+				<span class="comments">/* Not a single one can be omitted.*/</span><br />
+				<span class="comments">/* From this Website,we know what is a team,we learn how to collaborate with others;*/</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						We are a team, come here, join us.
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Waiting for your join.<br/>
+					<div class="signature">
+					             软件世界，就是模拟客观世界<br/>
+					            解决问题，从而需求分析<br/>
+					          技术驱动，改造世界<br/>
+                           --烽火狼团队<br/>
+						   <br/>
+						   <br/>
+						   <br/>
+						   
+						  <a href="index.jsp" onclick="return window.confirm('推荐使用谷歌，火狐或IE等浏览器访问')"><font size="8">请点击进入人力资源管理系统</font></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var together = new Date();
+		together.setFullYear(2013, 5, 20);
+		together.setHours(12);
+		together.setMinutes(30);
+		together.setSeconds(22);
+		together.setMilliseconds(22);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				showMessages();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>

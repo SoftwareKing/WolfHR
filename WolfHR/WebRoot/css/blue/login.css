@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#004574,endcolorstr=#175f8f,gradientType=0);
+    background: #004676;
+	margin: 0;
+}
+
+A:link {
+	COLOR: #a9dcff; TEXT-DECORATION: none
+}
+
+A:visited {
+	COLOR: #a9dcff; TEXT-DECORATION: none
+}
+
+#CenterAreaBg {
+	float: left;
+	background: url(images/mylogin_bg.gif) repeat-x;
+	width: 100%; 
+	height: 569px;
+}
+
+#CenterArea {
+	position: absolute; 
+	left: 280px;
+	float: left;
+	background: url(images/mylogin.png) no-repeat;
+	height: 569px;
+	width: 776px;
+}
+
+#LogoImg {
+	padding-left: 180px;
+	padding-top: 200px;
+	float: left;
+	width: 100%;
+}
+
+#LoginInfo {
+	padding-top: 270px;
+	padding-left: 370px;
+	float: left;
+	width: 360px;
+	height: 145px;
+}
+
+#LoginInfo tr {
+	height: 23px;
+}
+
+.Subject {
+	color: #a7c4d7;
+	font-family: "";
+	font-size: 11pt;
+	padding-left: 15px;
+	padding-right: 9px;
+	text-align: justify;
+}
+
+.TextField {
+	color: #1e71a8;
+	font-size: 12px;
+	width: 168px;
+	height: 19px;
+	padding-right: 9px;
+}
+
+.PopUpButton {
+	color: #1e71a8;
+	font-size: 12px;
+	width: 126px;
+	height: 19px;
+	padding-right: 9px;
+}
+
+#LoginBtn {
+	float: right;
+	padding-top: 30px;
+	padding-right: 270px;
+	width: 100px;
+}
+
+#ImgCode {
+	padding-top: 1px;
+	padding-left: 2px;
+	float: left;
+}
+
+.TextField_ImgCode {
+	color: #1e71a8;
+	font-size: 12px;
+	width: 105px;
+	height: 19px;
+}
+
+#CopyRight {
+	padding-top: 25px;
+	padding-left: 450px;
+	float: left;
+	color: #4c91bf;
+	font-size: 12px;
+}
+
+#CopyRight A:link {
+	COLOR: #4c91bf; TEXT-DECORATION: none
+}
+
+#CopyRight A:visited {
+	COLOR: #4c91bf; TEXT-DECORATION: none
+}
+
+#CopyRight A:active {
+	COLOR: #4c91bf; TEXT-DECORATION: none
+}
+
+#CopyRight A:hover {
+	COLOR: #4c91bf; TEXT-DECORATION: none;
+}
+
+.td1{
+	width:60px;
+	height:25px;
+	line-height:25px;
+	color:#153A55;
+}
+
+.userName {
+	background:url(images/mylogin/userName_success.gif) no-repeat;
+	border:0px;
+	width:165px;
+	height:19px;
+	line-height:17px;
+	padding-left:25px;
+}
+.userName_focus {
+	background:url(images/mylogin/userName_focus.gif) no-repeat;
+	border:0px;
+	width:165px;
+	height:19px;
+	line-height:17px;
+	padding-left:25px;
+}
+.password {
+	background:url(images/mylogin/password_success.gif) no-repeat;
+	border:0px;
+	width:165px;
+	height:19px;
+	line-height:17px;
+	padding-left:25px;
+}
+.password_focus {
+	background:url(images/mylogin/password_focus.gif) no-repeat;
+	border:0px;
+	width:165px;
+	height:19px;
+	line-height:17px;
+	padding-left:25px;
+}
+.validate {
+	background:url(images/mylogin/validate_success.gif) no-repeat;
+	border:0px;
+	width:75px;
+	height:19px;
+	line-height:17px;
+	padding-left:23px;
+	letter-spacing: 3px;
+}
+.validate_focus {
+	background:url(images/mylogin/validate_focus.gif) no-repeat;
+	border:0px;
+	width:75px;
+	height:19px;
+	line-height:17px;
+	padding-left:23px;
+	letter-spacing: 3px;
+}
+.submit {
+	background:url(images/mylogin/login_btn.gif) no-repeat;
+	width:67px;
+	height:26px;
+	border:0;
+	cursor:pointer;
+}
+.reset {
+	background:url(images/mylogin/btn_reset.gif) no-repeat;
+	width:67px;
+	height:26px;
+	border:0;
+	cursor:pointer;
+}

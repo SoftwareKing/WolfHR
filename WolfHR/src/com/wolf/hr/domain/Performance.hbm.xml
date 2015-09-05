@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wolf.hr.domain.Performance" table="performance">
+		<id name="pfid" type="java.lang.Long" length="8">
+			<column name="pfid"></column>
+			<generator class="increment"></generator>
+		</id>
+	    <property name="Jobnumber" type="java.lang.String" length="20"></property>
+		<property name="username" type="java.lang.String" length="20"></property>
+		<property name="department" type="java.lang.String" length="20"></property>
+		<property name="post" type="java.lang.String" length="20"></property>
+		<property name="taskdescription" type="java.lang.String" length="200"></property>
+		<property name="baifenbi" type="java.lang.String" length="20"></property>
+		<property name="starttime" type="java.lang.String"  length="20"></property>
+		<property name="planendtime" type="java.lang.String"  length="20"></property>
+		<property name="completetime" type="java.lang.String"  length="20"></property>
+		<property name="description" type="java.lang.String" length="200"></property>
+		
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,878 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>OA8000��ǿ��_TUMYSQL5--�鿴Ա������</title>
+  <meta content="MSHTML 6.00.2800.1276" name="GENERATOR" />
+  <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0" />
+  <script language="javascript" src="2_data_002/stm31.js" type="text/javascript">
+</script>
+  <script language="javascript" src="2_data_002/Menu500FILE73507753437825E.js" type="text/javascript">
+</script>
+  <script language="javascript" src="OA8000%E5%A2%9E%E5%BC%BA%E7%89%88_TUMYSQL5--%E6%9F%A5%E7%9C%8B%E5%91%98%E5%B7%A5%E6%A1%A3%E6%A1%881_files/systemMsg.js" type="text/javascript">
+</script>
+  <script language="javascript" src="2_data_003/calendar.js" type="text/javascript">
+</script>
+  <script language="javascript" src="2_data_003/calendar_002.js" type="text/javascript">
+</script>
+  <link href="2_data_003/mainWin.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="2_data_003/mainWin_002.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="2_data_003/query.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="2_data_003/calendar.css" type="text/css" media="screen" rel="stylesheet" />
+  <link href="2_data_003/cal.css" type="text/css" media="screen" rel="stylesheet" />
+</head>
+
+<body topmargin="0" leftmargin="0" onload="onLoad()" marginheight="0" marginwidth="0">
+  <div id="Calendar" scrolling="no" style="border:0px solid #EEEEEE ;position: absolute; width: 150; height: 137; z-index: 200; filter :'progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#AAAAAA,strength=4)' ;display: none"></div><script language="javascript" src="2_data_003/pageCommon.js" type="text/javascript">
+</script><script language="javascript" src="2_data_003/general.js" type="text/javascript">
+</script><script language="javascript" src="2_data_003/5402.js" type="text/javascript">
+</script><!-- base href="http://221.209.29.142/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/10.0.11.0" -->
+
+  <form method="post" name="actForm" enctype="multipart/form-data" action="/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/14.0.11.0">
+    <div id="Title_bar">
+      <div id="Title_bar_Head">
+        <div id="Title_Head"></div>
+
+        <div id="Title">
+          <img src="2_data_003/title_arrow.gif" border="0" height="13" width="13" /> ����Ա������<input name="userAccount" type="hidden" />
+        </div>
+
+        <div id="Title_End"></div>
+
+        <div id="Title_bar_bg"></div>
+      </div>
+
+      <div id="Title_bar_Tail">
+        <div id="Title_FuncBar">
+          <ul>
+            <li class="title">
+              <a name="BTN73511161324A7XK" href="http://221.209.29.142/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/14.0.11.0.9.0.1.0.0"></a>
+
+              <div onclick="submitButton('SAVEON');" class="Btn">
+                ���沢����
+              </div>
+            </li>
+
+            <li class="title">
+              <a name="BTN73511161325E561" href="http://221.209.29.142/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/14.0.11.0.9.2.0.0"></a>
+
+              <div onclick="submitButton('SAVE');" class="Btn">
+                ����
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="QueryArea">
+      <div style="height: 25px">
+        <center>
+          <table cellpadding="3" cellspacing="1" border="0" height="22">
+            <tbody>
+              <tr width="230" class="Pannel_font" align="center" valign="bottom">
+                
+				<td class="Pannel_select" width="76"><a onclick="submitButton('EDUCATION');" href="userbaic.htm">����Ϣ</td>
+
+                <td class="Pannel_no_select" width="77"><a onclick="submitButton('EDUCATION');" href="useredu.htm">����</a></td>
+
+                <td class="Pannel_no_select" width="90"><a onclick="submitButton('SOCIETY');" href="usermanger.htm">������Ϣ</a></td>
+
+                <td class="Pannel_no_select" width="77"><a onclick="submitButton('WORKHISTORY');" href="userwork.htm">��������</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+      </div>
+    </div>
+	
+	<a name="downloadLnk" href="http://221.209.29.142/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/14.0.11.0.13.1"></a><input name="functionName" type="hidden" />
+
+    <center>
+      <div class="ItemBlock_Title1">
+        <img src="2_data_003/item_point.gif" border="0" />&nbsp;����Ϣ
+      </div>
+
+      <div class="ItemBlockBorder" style="width:95%;">
+        <div class="ItemBlock">
+          <center>
+            <center>
+              <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td>
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td></td>
+
+                            <td width="100"></td>
+
+                            <td width="180"></td>
+
+                            <td></td>
+
+                            <td width="100"></td>
+
+                            <td width="180"></td>
+
+                            <td></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td></td>
+
+                         
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+
+                            <td></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.7.0" type="text" /></td>
+
+                            <td height="27" width="50"><font color="#FF0000">&nbsp;*</font></td>
+
+                            <td>Ա������</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.12" type="text" /></td>
+
+                            <td height="27" width="50"><font color="#FF0000">&nbsp;*</font></td>
+
+                            <td rowspan="4">
+                              <table cellpadding="0" cellspacing="0" border="0" height="120" width="120">
+                                <tbody>
+                                  <tr height="5">
+                                    <td class="Navigation_bg_img1" width="5"></td>
+
+                                    <td class="Navigation_bg_img2"></td>
+
+                                    <td class="Navigation_bg_img3" width="6"></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="Navigation_bg_img4"></td>
+
+                                    <td class="Category_bg" align="center" valign="middle"><img src="2_data_003/default_person.gif" border="0" height="100" width="100" /></td>
+
+                                    <td class="Navigation_bg_img6"></td>
+                                  </tr>
+
+                                  <tr height="6">
+                                    <td class="Navigation_bg_img8"></td>
+
+                                    <td class="Navigation_bg_img10" align="center"><a href="#" onclick="var win = showModelessDialog('/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/14.0.11.0.16.1.1.5.16.0.0', window,'dialogWidth:580px;dialogHeight:300px;status:no;resizable:yes;scroll:yes');">��Ƭ�ϴ�</a></td>
+
+                                    <td class="Navigation_bg_img9"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td></td>
+
+                            <td>���֤����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.20" type="text" /></td>
+
+                            <td></td>
+
+                            <td>����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.24" type="text" /></td>
+
+                            <td height="27"></td>
+                          </tr>
+
+                          <tr>
+                            <td></td>
+
+                            <td>��������</td>
+
+                            <td>
+                              <input size="10" onblur="TextOnBlur(this);" onfocus="this.select();" class="inputdate" value="1970-01-01" name="birthday" type="text" /> <img onclick="OpenDate(document.all.birthday);" style="margin-bottom: -3px; cursor:pointer;" src="2_data_003/time_date.gif" border="0" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+                              var lastImg = "<img border=0 src=/htoa/image/time_last.gif>";
+                              var nextImg = "<img border=0 src=/htoa/image/time_next.gif>";
+                              var upImg = "<img border=0 src=/htoa/image/time_up.gif>";
+                              var downImg = "<img border=0 src=/htoa/image/time_down.gif>";
+                              var saveImg = "<img border=0 src=/htoa/image/time_save.gif>";
+                              var cancelImg = "<img border=0 src=/htoa/image/time_cancel.gif>";
+                              //]]>
+                              </script>
+                            </td>
+
+                            <td></td>
+
+                            <td>�Ա�</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.32">
+                              <option value="WONoSelectionString">
+                                ��ѡ��
+                              </option>
+
+                              <option selected="selected" value="0">
+                                ��
+                              </option>
+
+                              <option value="1">
+                                Ů
+                              </option>
+                            </select></td>
+
+                            <td height="27"></td>
+                          </tr>
+
+                          <tr>
+                            <td></td>
+
+                            <td>����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.36" type="text" /></td>
+
+                            <td></td>
+
+                            <td>Ӣ����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.40" type="text" /></td>
+
+                            <td height="27"></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>�������ڵ�</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.44" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>��ס��ַ</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.48" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>����״̬</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.52">
+                              <option value="WONoSelectionString">
+                                ��ѡ��
+                              </option>
+
+                              <option selected="selected" value="0">
+                                δ��
+                              </option>
+
+                              <option value="1">
+                                �ѻ�
+                              </option>
+
+                              <option value="2">
+                                ����
+                              </option>
+
+                              <option value="3">
+                                ɥż
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>������ò</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.56">
+                              <option value="WONoSelectionString">
+                                ��ѡ��
+                              </option>
+
+                              <option value="0">
+                                һ����Ա
+                              </option>
+
+                              <option selected="selected" value="1">
+                                Ⱥ��
+                              </option>
+
+                              <option value="2">
+                                ��Ա
+                              </option>
+
+                              <option value="3">
+                                ��Ա
+                              </option>
+
+                              <option value="4">
+                                ��������
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>Ѫ��</td>
+
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td><input value="0" name="R1" checked="checked" type="radio" /></td>
+
+                                    <td>A��</td>
+
+                                    <td><input value="1" name="R1" type="radio" /></td>
+
+                                    <td>B��</td>
+
+                                    <td><input value="2" name="R1" type="radio" /></td>
+
+                                    <td>O��</td>
+
+                                    <td><input value="3" name="R1" type="radio" /></td>
+
+                                    <td>AB��</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>ѧ��</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.78">
+                              <option value="WONoSelectionString">
+                                ��ѡ��
+                              </option>
+
+                              <option value="0">
+                                ����
+                              </option>
+
+                              <option value="1">
+                                ����
+                              </option>
+
+                              <option value="2">
+                                ��ר
+                              </option>
+
+                              <option selected="selected" value="3">
+                                ����
+                              </option>
+
+                              <option value="4">
+                                �о���
+                              </option>
+
+                              <option value="5">
+                                ��ʿ
+                              </option>
+
+                              <option value="6">
+                                ��ʿ��
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>��ҵʱ��</td>
+
+                            <td>
+                              <input size="10" onblur="TextOnBlur(this);" onfocus="this.select();" class="inputdate" name="graduateDate" type="text" /> <img onclick="OpenDate(document.all.graduateDate);" style="margin-bottom: -3px; cursor:pointer;" src="2_data_003/time_date.gif" border="0" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+                              var lastImg = "<img border=0 src=/htoa/image/time_last.gif>";
+                              var nextImg = "<img border=0 src=/htoa/image/time_next.gif>";
+                              var upImg = "<img border=0 src=/htoa/image/time_up.gif>";
+                              var downImg = "<img border=0 src=/htoa/image/time_down.gif>";
+                              var saveImg = "<img border=0 src=/htoa/image/time_save.gif>";
+                              var cancelImg = "<img border=0 src=/htoa/image/time_cancel.gif>";
+                              //]]>
+                              </script>
+                            </td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>���ι���ʱ��</td>
+
+                            <td>
+                              <input size="10" onblur="TextOnBlur(this);" onfocus="this.select();" class="inputdate" name="firstJobDate" type="text" /> <img onclick="OpenDate(document.all.firstJobDate);" style="margin-bottom: -3px; cursor:pointer;" src="2_data_003/time_date.gif" border="0" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+                              var lastImg = "<img border=0 src=/htoa/image/time_last.gif>";
+                              var nextImg = "<img border=0 src=/htoa/image/time_next.gif>";
+                              var upImg = "<img border=0 src=/htoa/image/time_up.gif>";
+                              var downImg = "<img border=0 src=/htoa/image/time_down.gif>";
+                              var saveImg = "<img border=0 src=/htoa/image/time_save.gif>";
+                              var cancelImg = "<img border=0 src=/htoa/image/time_cancel.gif>";
+                              //]]>
+                              </script>
+                            </td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>��ְ����</td>
+
+                            <td>
+                              <input size="10" onblur="TextOnBlur(this);" onfocus="this.select();" class="inputdate" value="2013-07-11" name="joinDate" type="text" /> <img onclick="OpenDate(document.all.joinDate);" style="margin-bottom: -3px; cursor:pointer;" src="2_data_003/time_date.gif" border="0" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+                              var lastImg = "<img border=0 src=/htoa/image/time_last.gif>";
+                              var nextImg = "<img border=0 src=/htoa/image/time_next.gif>";
+                              var upImg = "<img border=0 src=/htoa/image/time_up.gif>";
+                              var downImg = "<img border=0 src=/htoa/image/time_down.gif>";
+                              var saveImg = "<img border=0 src=/htoa/image/time_save.gif>";
+                              var cancelImg = "<img border=0 src=/htoa/image/time_cancel.gif>";
+                              //]]>
+                              </script>
+                            </td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>��ҵԺУ</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.94" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>ѧλ</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.98">
+                              <option value="WONoSelectionString">
+                                ��ѡ��
+                              </option>
+
+                              <option value="0">
+                                ��ѧλ
+                              </option>
+
+                              <option selected="selected" value="1">
+                                ѧʿ
+                              </option>
+
+                              <option value="2">
+                                ˶ʿ
+                              </option>
+
+                              <option value="3">
+                                ��ʿ
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>רҵ</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.102" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td></td>
+
+                            <td>��������</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.106" type="text" /></td>
+
+                            <td></td>
+
+                            <td>���Ｖ��</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.110" type="text" /></td>
+
+                            <td height="27"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>�ڶ�����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.114" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>�ڶ����Ｖ��</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.118" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>�س�</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.122" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.126" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>�绰</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.130" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>����</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.134" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>������ϵ��</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.138" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>��ϵ�˵绰</td>
+
+                            <td><input onfocus="this.select();" class="InputStyle" name="0.11.0.16.1.1.5.142" type="text" /></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>ת������</td>
+
+                            <td>
+                              <input size="10" onblur="TextOnBlur(this);" onfocus="this.select();" class="inputdate" value="2013-10-11" name="probationership" type="text" /> <img onclick="OpenDate(document.all.probationership);" style="margin-bottom: -3px; cursor:pointer;" src="2_data_003/time_date.gif" border="0" /> <script language="javascript" type="text/javascript">
+//<![CDATA[
+                              var lastImg = "<img border=0 src=/htoa/image/time_last.gif>";
+                              var nextImg = "<img border=0 src=/htoa/image/time_next.gif>";
+                              var upImg = "<img border=0 src=/htoa/image/time_up.gif>";
+                              var downImg = "<img border=0 src=/htoa/image/time_down.gif>";
+                              var saveImg = "<img border=0 src=/htoa/image/time_save.gif>";
+                              var cancelImg = "<img border=0 src=/htoa/image/time_cancel.gif>";
+                              //]]>
+                              </script>
+                            </td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>Ա��״̬</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.150">
+                              <option value="WONoSelectionString">
+                                ��ѡ��
+                              </option>
+
+                              <option value="0">
+                                ��ʱ��ͬ��
+                              </option>
+
+                              <option selected="selected" value="1">
+                                ��ʽԱ��
+                              </option>
+
+                              <option value="2">
+                                ������Ա��
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>����</td>
+
+                            <td><select onchange="submitButton('CHANGE');" class="SelectStyle" name="0.11.0.16.1.1.5.154">
+                              <option value="WONoSelectionString">
+                                ��ѡ��...
+                              </option>
+
+                              <option selected="selected" value="0">
+                                �������ż������޹�˾
+                              </option>
+
+                              <option value="1">
+                                |-�ܾ�����
+                              </option>
+
+                              <option value="2">
+                                |-������
+                              </option>
+
+                              <option value="3">
+                                |---�칫��
+                              </option>
+
+                              <option value="4">
+                                |---���²�
+                              </option>
+
+                              <option value="5">
+                                |---��Ϣ��
+                              </option>
+
+                              <option value="6">
+                                |-�ʲƲ�
+                              </option>
+
+                              <option value="7">
+                                |---����
+                              </option>
+
+                              <option value="8">
+                                |---�ɹ���
+                              </option>
+
+                              <option value="9">
+                                |-Ӫ����ҵ��
+                              </option>
+
+                              <option value="10">
+                                |---���۲�
+                              </option>
+
+                              <option value="11">
+                                |---�г���
+                              </option>
+
+                              <option value="12">
+                                |---�����ֹ�˾
+                              </option>
+
+                              <option value="13">
+                                |---�����ֹ�˾
+                              </option>
+
+                              <option value="14">
+                                |---�Ϻ��ֹ�˾
+                              </option>
+
+                              <option value="15">
+                                |---���ڷֹ�˾
+                              </option>
+
+                              <option value="16">
+                                |---���Ϸֹ�˾
+                              </option>
+
+                              <option value="17">
+                                |-�����ҵ��
+                              </option>
+
+                              <option value="18">
+                                |---�з���
+                              </option>
+
+                              <option value="19">
+                                |---���
+                              </option>
+
+                              <option value="20">
+                                |-----���һ��
+                              </option>
+
+                              <option value="21">
+                                |-----������
+                              </option>
+
+                              <option value="22">
+                                |---������
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td>��λ</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.158">
+                              <option selected="selected" value="WONoSelectionString">
+                                ��ѡ��...
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td width="50"></td>
+
+                            <td>ְ��</td>
+
+                            <td><select class="SelectStyle" name="0.11.0.16.1.1.5.162">
+                              <option value="WONoSelectionString">
+                                ��ѡ��
+                              </option>
+
+                              <option selected="selected" value="0">
+                                ��ְ��
+                              </option>
+
+                              <option value="1">
+                                ����
+                              </option>
+
+                              <option value="2">
+                                ����ʦ
+                              </option>
+
+                              <option value="3">
+                                �߼�����ʦ
+                              </option>
+                            </select></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+
+                            <td></td>
+
+                            <td height="27" width="50"></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td height="150"></td>
+
+                            <td height="70" valign="middle">ְҵ�ʸ�֤��</td>
+
+                            <td colspan="4">
+                            <textarea class="InputAreaStyle" style="width:100%;height:80%" name="0.11.0.16.1.1.5.168">
+</textarea></td>
+
+                            <td></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td height="27"></td>
+
+                            <td height="70" valign="middle">��������</td>
+
+                            <td colspan="4">
+                            <textarea class="InputAreaStyle" style="width:100%;height:80%" name="0.11.0.16.1.1.5.172">
+</textarea></td>
+
+                            <td></td>
+
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td height="27"></td>
+
+                            <td>�����</td>
+
+                            <td colspan="4"><input size="30" class="DotButton" name="0.11.0.16.1.1.5.176.0.1" type="file" />&nbsp;<input class="ButtonStyle" value="�ϴ�" name="0.11.0.16.1.1.5.176.0.3" type="submit" /></td>
+
+                            <td></td>
+
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+
+                    <td align="right" valign="top"></td>
+
+                    <td width="10"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </center>
+          </center>
+        </div>
+      </div>
+    </center><input name="wosid" value="ghxAgl00I8cdEfwks7iIgg" type="hidden" />
+  </form>
+
+  <form method="post" name="homeForm" action="/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/14.0.11.1">
+    <input name="alertMsg" type="hidden" /> <input name="newUrl" type="hidden" /> <input name="newWindow" type="hidden" /> <input name="confirmMsg" type="hidden" /> <input value="OA8000��ǿ��_TUMYSQL5--�鿴Ա������" name="topTitle" type="hidden" /><input value="5402" name="pgID" type="hidden" /><input name="returnPage" type="hidden" /><input name="wosid" value="ghxAgl00I8cdEfwks7iIgg" type="hidden" />
+  </form>
+
+  <form method="post" id="menuForm" action="/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.proj.oasp54.Oasp5402/ghxAgl00I8cdEfwks7iIgg/14.0.11.2.1">
+    <script type="text/javascript" language="JavaScript1.2">
+//<![CDATA[
+    writeMenu(false);
+    //]]>
+    </script> <input name="url" type="hidden" /><input name="urlName" type="hidden" /><input name="wosid" value="ghxAgl00I8cdEfwks7iIgg" type="hidden" />
+  </form>
+</body>
+</html>

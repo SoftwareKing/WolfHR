@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="userlizhi" namespace="/"  extends="checkdefault">
+  	<action name="userlizhiAction_*" method="{1}" class="userlizhiAction">
+  		<result name="listAction">WEB-INF/jsp/userlizhi/list.jsp</result>
+  		<result name="action2action" type="redirectAction">userlizhiAction_getAllUserLizhi.action</result>
+  		<result name="addUI">WEB-INF/jsp/userlizhi/add.jsp</result>
+  		<result name="updateUI">WEB-INF/jsp/userlizhi/update.jsp</result>
+  	</action>
+  </package>
+</struts>	

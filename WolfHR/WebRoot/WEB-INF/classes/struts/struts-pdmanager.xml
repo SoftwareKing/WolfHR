@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  	<package name="pdmanager" namespace="/" extends="checkdefault">
+  		<action name="pdManagerAction_*" method="{1}" class="pdManagerAction">
+  			<result name="listAction">WEB-INF/jsp/workflow/pdList.jsp</result>
+  			<result name="deployUI">WEB-INF/jsp/workflow/deployUI.jsp</result>
+  			<result name="action2action" type="redirectAction">pdManagerAction_getLasterVersions.action</result>
+  			<result type="stream"></result>
+  		</action>
+  	</package>
+</struts>	

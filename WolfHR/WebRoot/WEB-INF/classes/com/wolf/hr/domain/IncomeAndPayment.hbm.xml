@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wolf.hr.domain.IncomeAndPayment" table="incomeAndPayment">
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="activatyName" type="java.lang.String"></property>
+		<property name="address" type="java.lang.String"></property>
+		<property name="activatyMoney" type="java.lang.Double"></property>
+		<property name="state" type="java.lang.Integer"></property>
+		<set name="infos" table="incomeAndPayment_info">
+			<key column="incomeAndPaymentId"></key>
+			<many-to-many column="salaryInfoId" class="com.wolf.hr.domain.SalaryInfo"></many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

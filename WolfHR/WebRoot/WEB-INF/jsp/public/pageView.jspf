@@ -1,0 +1,58 @@
+<%@ page language="java" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+<div id=PageSelectorBar>
+	<div id=PageSelectorMemo>
+		页次：${currentPage}/${pageCount }页 &nbsp;
+		每页显示：${pageSize }条 &nbsp;
+		总记录数：${recordCount }条
+	</div>
+	<div id=PageSelectorSelectorArea>
+	
+		<a href="javascript: gotoPage(1)" title="首页" style="cursor: hand;">
+			<img src="${pageContext.request.contextPath}/css/blue/images/pageSelector/firstPage.png"/>
+		</a>
+		
+		<s:iterator begin="beginPageIndex" end="endPageIndex" var="num">
+			<s:if test="#num == currentPage"><!-- 如果是当前页 -->
+				<span class="PageSelectorNum PageSelectorSelected">${num}</span>
+			</s:if>
+			<s:else><!-- 如果不是当前页 -->
+				<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPage(${num});">${num}</span>
+			</s:else>
+		</s:iterator>
+		
+		<a href="javascript: gotoPage(${pageCount})" title="尾页" style="cursor: hand;">
+			<img src="${pageContext.request.contextPath}/css/blue/images/pageSelector/lastPage.png"/>
+		</a>
+		
+		转到：
+		<input onFocus="this.select();" maxlength="3" class="inputStyle" type="text" value="1" id="pn"/>
+		<input type="submit" value="Go" class="MiddleButtonStyle" onclick="gotoPage( document.getElementById('pn').value )"/>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function gotoPage( pageNum ){
+		// window.location.href = "${pageContext.request.contextPath}/forumAction_show.action?id=${id}&pageNum=" + pageNum;
+
+		if( isNaN(pageNum) ){ // not a number
+			alert("请输入正确的页码！");
+			document.getElementById("pn").focus();
+			return;
+		}
+		
+		// 输入的要整数才行
+		pageNum = parseInt(pageNum); // 变为整数（去掉小数点及其后的数字） 
+		
+		if( pageNum < 1 || pageNum > ${pageCount} ){
+			alert("请输入正确的页码，范围是 1-${pageCount} ！");
+			document.getElementById("pn").focus();
+			return;
+		}
+		
+		// 添加页码字段 
+		$(document.forms[0]).append("<input type='hidden' name='pageNum' value='" + pageNum + "'/>");
+		document.forms[0].submit(); // 提交表单 
+	}
+</script>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="usermanger" namespace="/" extends="struts-default">
+  	<action name="usermangerAction_*" method="{1}" class="usermangerAction">
+  		
+  		<result name="addUI">WEB-INF/jsp/user/addusermanger.jsp</result>
+		<result name="listAction">WEB-INF/jsp/user/usermangerlist.jsp</result>
+		<result name="action2action" type="redirectAction">usermangerAction_add.action</result>
+  		
+  	</action>
+  </package>
+  
+  
+</struts>	

@@ -1,0 +1,659 @@
+A:link {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+A:visited {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+A:active {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+A:hover {
+	COLOR: #0000ff;
+	TEXT-DECORATION: none;
+}
+
+A.OpenWinLink:hover {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+body {
+	background-color: #F3F9FD;
+	color: #004779;
+	font-size: 12px;
+	font-family: 宋体;
+	margin-left: 1px;
+	margin-right: 1px;	
+	scrollbar-base-color: #dbecf8;
+	scrollbar-arrow-color: #2a8ed1;
+	scrollbar-track-color: #bdddf2;
+	scrollbar-3dlight-color: #2886c5;
+	scrollbar-darkshadow-color: #2886c5;
+	scrollbar-face-color: #dbecf8;
+	scrollbar-shadow-color: #dbecf8;
+}
+
+td {
+	font-size: 12px;
+	font-family: 宋体;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#Title_bar A:link {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+#Title_bar A:visited {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+#Title_bar A:active {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+#Title_bar A:hover {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+#Title_bar {
+	margin: 0px;
+	height: 39px;
+	background: #91c0e3;
+	border-top:1px solid #ffffff;
+	border-bottom: 7px solid #ffffff;
+}
+
+#Title_bar_Head {
+	float: left;
+	padding-left: 12px;
+	padding-top: 11px;
+	margin-right: -34%;
+	width: 34%;
+}
+
+#Title_bar_Head500 {
+	float: left;
+	padding-left: 10px;
+	padding-top: 11px;
+	margin-right: -57%;
+	width: 57%;
+}
+
+#Title_bar_bg {
+	float: right;
+	background: url( images/title_bar_bg.gif ) no-repeat;
+	height: 21px;
+	width: 50px;
+	margin-right: 0px;
+	margin-top: 7px;
+}
+
+#Title_bar_bg500 {
+	float: right;
+	background: url( images/title_bar_bg.gif ) no-repeat;
+	height: 21px;
+	width: 40px;
+	margin-right: 0px;
+	margin-top: 7px;
+}
+
+#Title_bar_bg_up {
+	float: left;
+	padding-top: 18px;
+	width: 63px;
+}
+
+#Title_bar_Tail {
+	float: right;
+	padding-top: 18px;
+	width: 66%;
+}
+
+#Title_bar_Tail500 {
+	float: right;
+	padding-top: 18px;
+	width: 43%;
+}
+
+#Title_Head {
+	float: left;
+	background: url( images/title_bg_head.gif ) no-repeat;
+	height: 28px;
+	width: 5px;
+}
+
+#Title {
+	float: left;
+	background: url( images/title_bg.gif ) repeat-x;
+	margin-bottom: -28px;
+	height: 28px;
+	color: #004a7d;
+	font-size: 14px;
+	font-family: 宋体;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-top: 8px;
+	margin-right: 0px;
+	padding-right: 30px;
+}
+
+#Title_End {
+	float: left;
+	background: url( images/title_bg_end.gif ) no-repeat;
+	height: 28px;
+	width: 55px;
+}
+
+.Btn {
+	cursor: pointer;
+}
+
+#Title_FuncBar {
+	width: 100%;
+	float: right;
+	text-align: right;
+	border-top: 1px solid #2f82bf;
+	padding-right: 15px;
+	height: 20px;
+	background: #6eaddc;
+	padding-right: 20px;
+	color: #004779;
+	font-size: 12px;
+	font-family: 宋体;
+}
+
+#Title_FuncBar ul {
+	margin: 0 2 0 0;
+	padding-top: 2px;
+}
+
+#Title_FuncBar li.title {
+	list-style-type: none;
+	float: right;
+	text-align: center;
+	line-height: 18px;
+	font-size: 12px;
+	color: #004779;
+	padding-left: 8px;
+	padding-right: 10px;
+}
+
+#Title_FuncBar li.line {
+	float: right;
+	width: 1px;
+	height: 18px;
+	border-right: 1px solid #004779;
+}
+
+#MainArea {
+	width: 100%;
+	background: url( images/inputPageHeadBg.gif ) repeat-x;
+	border-top: 2px solid #ffffff;
+}
+
+#TableTail {
+	border-top: 2px solid #a4cdec;
+	border-bottom: 2px solid #a4cdec;
+	width: 100%;
+	height: 30px;
+	float: left;
+}
+
+#TableTail_inside {
+	width: 100%;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	height: 25px;
+	float: left;
+	background: url( images/bottombg.jpg ) repeat-x left top !important;
+	filter: progid: DXImageTransform . Microsoft . gradient( startcolorstr = #a4cdec, endcolorstr = #ffffff, gradientType = 0 );
+}
+
+.FuncBtn {
+	float: left;
+	cursor: pointer;
+}
+
+.FuncBtnHead {
+	background: url( images/func_btn_head_bg.gif ) no-repeat;
+	float: left;
+	width: 2px;
+	height: 20px;
+}
+
+.FuncBtnMemo {
+	background: url( images/func_btn_bg.gif ) repeat-x;
+	float: left;
+	height: 20px;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.FuncBtnTail {
+	background: url( images/func_btn_tail_bg.gif ) no-repeat;
+	float: left;
+	width: 2px;
+	height: 25px;
+}
+
+.FuncBtnBlue {
+	float: left;
+	cursor: pointer;
+}
+
+.FuncBtnHeadBlue {
+	background: url( images/func_btn_head_bg_blue.jpg ) no-repeat;
+	float: left;
+	width: 3px;
+	height: 25px;
+}
+
+.FuncBtnMemoBlue {
+	background: url( images/func_btn_bg_blue.jpg ) repeat-x;
+	float: left;
+	height: 25px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.FuncBtnTailBlue {
+	background: url( images/func_btn_tail_bg_blue.jpg ) no-repeat;
+	float: left;
+	width: 3px;
+	height: 25px;
+}
+
+.FuncBtnGreen {
+	float: left;
+	cursor: pointer;
+}
+
+.FuncBtnHeadGreen {
+	background: url( images/func_btn_head_bg_green.jpg ) no-repeat;
+	float: left;
+	width: 2px;
+	height: 25px;
+}
+
+.FuncBtnMemoGreen {
+	background: url( images/func_btn_bg_green.jpg ) repeat-x;
+	float: left;
+	height: 25px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.FuncBtnTailGreen {
+	background: url( images/func_btn_tail_bg_green.jpg ) no-repeat;
+	float: left;
+	width: 14px;
+	height: 25px;
+}
+
+.FuncBtnMemoSelected {
+	background: url(images/buttonselected.gif) repeat-x;
+	float: left;
+	height: 25px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.FuncBtnHeadSelected  {
+	background: url(images/buttonselected.gif) no-repeat;
+	float: left;
+	height: 25px;
+}
+
+
+.FuncBtnTailSelected  {
+	background: url(images/buttonselected.gif) no-repeat;
+	float: left;
+	height: 25px;
+}
+
+.NoSelectedBody {
+	background: url( images/noselectedBack.gif ) no-repeat;
+	float: left;
+	width: 94px;
+	height: 24px;
+	padding-left: 8px;
+}
+
+.SelectedBody {
+	background: url( images/selectedBack.gif ) no-repeat;
+	float: left;
+	width: 94px;
+	height: 24px;
+	padding-left: 8px;
+}
+
+.TableBgStyleRed {
+	background: url( images/tablebgheadred.gif ) repeat-x;
+	float: left;
+	width: 47px;
+	height: 26px;
+}
+
+.TableBgStyleGreen {
+	background: url( images/tablebgheadgreen.gif ) repeat-x;
+	float: left;
+	width: 47px;
+	height: 26px;
+}
+
+.TableBgStyleBlue {
+	background: url( images/tablebgheadblue.gif ) repeat-x;
+	float: left;
+	width: 47px;
+	height: 26px;
+}
+
+#TableTail_inside td {
+	font-size: 12px;
+	font-family: 宋体;
+	color: #005791;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.ItemBlock_Title {
+	margin: 0px;
+	font-size: 13px;
+	font-family: 宋体;
+	color: #004a7d;
+	font-weight: bold;
+	text-align: left;
+	width: 95%;
+	padding-top: 10px;
+	padding-left: 5px;
+	height: 31px;
+	background: url( images/item_title_bg.gif ) no-repeat;
+}
+
+.ItemBlock_Title1 {
+	margin: 0px;
+	font-size: 13px;
+	font-family: 宋体;
+	color: #004a7d;
+	font-weight: bold;
+	text-align: left;
+	width: 95%;
+	padding-top: 10px;
+	padding-left: 5px;
+	height: 31px;
+}
+
+.ItemBlockBorder {
+	width: 95%;
+	text-align: left;
+	border: 1px solid #91c0e3;
+	height: auto !important;
+	max-height: none;
+	min-height: 80px;
+}
+
+.ItemBlockBorder1 {
+	text-align: left;
+	border: 1px solid #91c0e3;
+	float: right;
+}
+
+.ItemBlock {
+	text-align: left;
+	border: 3px solid #f3f8fc;
+	background: #ffffff;
+	padding: 10px;
+	height: auto !important;
+	max-height: none;
+	min-height: 40px;
+	height: 100%;
+}
+
+#InputDetailBar {
+	float: left;
+	width: 100%;
+}
+
+#QueryArea {
+	float: left;
+	width: 100%;
+	border-top: 1px solid #abd8f9;
+	border-bottom: 3px solid #abd8f9;
+	filter: progid: DXImageTransform . Microsoft . gradient( startcolorstr = #ddedf8, endcolorstr = #ffffff, gradientType = 0 );
+}
+
+.textBlock {
+	width: 180px;
+	height: 30px;
+	float: left;
+}
+
+.BrowserTitle {
+	font-size: 13px;
+	color: #004a7d;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	height: 22px;
+	background: url( images/browser_title_bar_bg.gif ) repeat-x;
+}
+
+.BrowserBlock {
+	width: 100%;
+	text-align: left;
+	height: 50px;
+	background: #ffffff;
+}
+
+.PannelUl {
+	width: 95%;
+	height: 20px;
+	margin: 0px;
+	padding-top: 5px;
+}
+
+.Pannel_select {
+	float: left;
+	border: 1px solid #719AD0;
+	background: #B0D3EF;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.Pannel_no_select {
+	float: left;
+	border: 1px solid #B2D7F2;
+	background: #E7F4FC;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.Pannel {
+	border-top: 3px solid #007BB7;
+	width: 95%;
+	margin: 0px;
+}
+
+.Pannel_select_point {
+	background: url( images/pannel_point.gif ) no-repeat;
+	background-position: 60% 0;
+	float: left;
+}
+
+.Pannel_no_select_point {
+	float: left;
+}
+
+.ItemBlockBorderTree {
+	float: left;
+	width: 25%;
+	text-align: left;
+	border: 1px solid #91c0e3;
+	height: 600;
+}
+
+.ItemBlockBorderList {
+	float: right;
+	width: 73%;
+	border: 1px solid #91c0e3;
+}
+
+#MainArea1 {
+	width: 100%;
+	border-top: 2px solid #ffffff;
+	background-color: #ffffff;
+	border-bottom: solid 1px #DFDFDF;
+}
+
+.ItemBlockBorder2 {
+	width: 79%;
+	text-align: left;
+	float: right;
+	height: 600;
+	border-left: 1px solid #DFDFDF
+}
+
+.ItemBlock2 {
+	width: 100%;
+	text-align: left;
+	background: #ffffff;
+}
+
+A.OpenWinLink:hover {
+	COLOR: #004779;
+	TEXT-DECORATION: none;
+}
+
+#MainArea2 {
+	width: 100%;
+	background: url( images/inputPageHeadBg.gif ) repeat-x;
+	border-top: 2px solid #ffffff;
+	height: 87.1%;
+}
+
+#QueryArea1 {
+	float: left;
+	width: 100%;
+	border-top: 1px solid #ABD9FB;
+	border-bottom: 1px solid #ABD9FB;
+	padding: 8px;
+	background-color: #E5F2FA;
+}
+
+.Download_title {
+	font-size: 12px;
+	font-weight: bold;
+	color: #024E7F;
+}
+
+#FileDownLoadAreaBorder {
+	background-color: #F3F9FD;
+	border: 1px solid #91c0e3;
+	padding: 3px;
+	width: 320px;
+}
+
+#FileDownLoadArea {
+	background-color: #ffffff;
+	padding: 10px;
+	width: 100%;
+	margin: 0;
+}
+
+#FileDownLoadArea li {
+	height: 30px;
+}
+
+#ContentArea1 {
+	background-color: #ffffff;
+	width: 100%;
+	padding-left: 46px;
+	padding-top: 10px;
+	padding-right: 15px;
+}
+
+#sc {
+	height: 50;
+	border: 1px solid #91c0e3;
+	overflow-y: auto;
+	overflow-x: visible;
+	padding: 2px;
+	background-color: #ffffff;
+}
+
+#ContentArea1 {
+	background-color: #ffffff;
+	width: 100%;
+	height: 56.3%
+}
+
+.FuncBtnHeadNoBottom {
+	background: url( images/func_btn_head_bg_nobottom.gif ) no-repeat;
+	float: left;
+	width: 2px;
+	height: 19px;
+}
+
+.FuncBtnMemoNoBottom {
+	background: url( images/func_btn_bg_nobottom.gif ) repeat-x;
+	float: left;
+	height: 16px;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.FuncBtnMemoBottom {
+	line-height: 14px;
+	background: url( images/func_btn_bg_bottom.gif ) repeat-x;
+	float: left;
+	height: 19px;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.FuncBtnTailNoBottom {
+	background: url( images/func_btn_tail_bg_nobottom.gif ) no-repeat;
+	float: left;
+	width: 2px;
+	height: 19px;
+}
+
+.msgBorder {
+	border: 1px solid #ABD9FB;
+}
+
+.ButtonStyle {
+	height: 20px;
+	color: #004a7d;
+	cursor: pointer;
+	padding: 0 8px;
+	border-top: 0 solid #87a3c1 !important;
+	border-top: 1px solid #87a3c1;
+	border-left: 1px solid #87a3c1;
+	border-right: 1px solid #87a3c1;
+	border-bottom: 1px solid #87a3c1;
+	background:url("images/func_btn_bg.gif") repeat-x !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff,endcolorstr=#c5e7ff,gradientType=0);
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="user" namespace="/" extends="checkdefault">
+  	<action name="userAction_*" method="{1}" class="userAction">
+  		<result name="listAction">WEB-INF/jsp/user/list.jsp</result>
+  		<result name="addUI">WEB-INF/jsp/user/add.jsp</result>
+		<result name="addUUI">WEB-INF/jsp/user/adduserbasic.jsp</result>
+		<result name="addUPP">WEB-INF/jsp/user/upphoto.jsp</result>
+  		<result name="updateUI">WEB-INF/jsp/user/update.jsp</result>
+  		<result name="action2action" type="redirectAction">userAction_getAllUser.action</result>
+		<result name="Userbasic" type="redirectAction">userAction_getAllUserbasic.action</result>
+		<result name="success">WEB-INF/jsp/user/success.jsp</result>
+		<result name="resetpswUI">WEB-INF/jsp/user/resetpassword/resetpassword.jsp</result>
+		<result name="queryaddUI">WEB-INF/jsp/user/querylist.jsp</result>
+		<result name="personal">WEB-INF/jsp/personset/personal.jsp</result>
+		<result name="basiclist">WEB-INF/jsp/user/basiclist.jsp</result>
+		<result name="basic">WEB-INF/jsp/user/basic.jsp</result>
+		<result name="updateUserbasicUI">WEB-INF/jsp/user/updateuserbasic.jsp</result>
+		
+	</action>
+  </package>
+  
+  <package name="userjson" namespace="/" extends="json-default">
+  	<action name="userJSONAction_*" method="{1}" class="userAction">
+  		<result type="json"></result>
+  	</action>
+  </package>
+</struts>	

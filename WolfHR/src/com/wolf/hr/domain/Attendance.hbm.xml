@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wolf.hr.domain.Attendance" table="attendance">
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="startDate" type="java.lang.String"></property>
+		<property name="time" type="java.lang.String"></property>
+		<property name="attType" type="java.lang.String"></property>
+		<property name="month" type="java.lang.String"></property>
+		<property name="attHours" type="java.lang.Double"></property>
+		<many-to-one name="user" class="com.wolf.hr.domain.User">
+			<column name="userId"></column>
+		</many-to-one>
+		<many-to-one name="attUser" class="com.wolf.hr.domain.User">
+			<column name="attUserId"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,430 @@
+#PageHead {
+	height: 10px;
+}
+
+select {
+	HEIGHT: 18px; 
+	BACKGROUND-COLOR: #FFFFFF;
+	font-size: 12px;
+	color: #004779;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+table td {
+	empty-cells : show;
+}
+
+TEXTAREA {
+	height: 100%;
+	width: 100%;
+}
+
+.scrollStyle {
+	overflow: auto;
+	height: 100%;
+}
+
+.writeTD {
+	BORDER: #91c0e3 1px solid; 
+}
+
+.InputAreaStyle {
+	border: #91c0e3 1px solid; 
+	width: 100%;
+	height: 95%;
+	background-color: #FFFFFF;
+	color: #004779;
+	font-size:13px;
+}
+
+.InputAreaStyle1 {
+	BORDER: #91c0e3 1px solid; 
+	width: 37.67%;
+	HEIGHT: 95%; 
+	BACKGROUND-COLOR: #FFFFFF;
+	color: #004779;
+	font-size:13px;
+}
+
+.InputAreaStyle_Edit {
+	BORDER: #91c0e3 1px solid; 
+	width: 200px;
+	height: 100px;
+	BACKGROUND-COLOR: #FFFFFF;
+	color: #004779;
+	font-size:13px;
+}
+
+.InputStyle {
+	BORDER: #91c0e3 1px solid; 
+	width: 100%;
+	HEIGHT: auto; 
+	BACKGROUND-COLOR: #FFFFFF;
+	color: #004779;
+}
+
+.InputStyle1{
+	BORDER: #91c0e3 1px solid;
+	color: #004779;
+	BACKGROUND-COLOR: #FFFFFF;
+	width: 100%;
+	HEIGHT: 22px;
+	padding:3px;
+	font-size:10pt;
+}
+
+.InputStyle2 {
+	BORDER: #91c0e3 1px solid; 
+	BACKGROUND-COLOR: #FFFFFF;
+	color: #004779;
+}
+
+.InputStyle_Edit {
+	BORDER: #91c0e3 1px solid; 
+	BACKGROUND-COLOR: #FFFFFF;
+	color: #004779;
+}
+
+.disabledInput {
+	BORDER: #91c0e3 1px solid; 
+	width: 100%;
+	HEIGHT: auto; 
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+.errorInput {
+	BORDER: #91c0e3 1px solid; 
+	HEIGHT: auto; 
+	BACKGROUND-COLOR: #F8E5E4;
+	color: #004779;
+}
+.errorInputDate {
+	BORDER: #91c0e3 1px solid; 
+	HEIGHT: auto; 
+	BACKGROUND-COLOR: #F8E5E4;
+	color: #004779;
+}
+.notWrite {
+	BORDER: #91c0e3 0 solid;
+	HEIGHT: auto; 
+	BACKGROUND-COLOR: transparent;
+	color: #004779;
+}
+
+.notWriteByTextArea {
+	BORDER: #91c0e3 0 solid;
+	HEIGHT: 100%;
+	BACKGROUND-COLOR: transparent;
+	color: #004779;
+}
+
+.SelectStyle {
+	width: 100%;
+	border: #91c0e3 1px solid; 
+	color: #004779;
+}
+
+.SelectStyle_60 {
+	width: 60%;
+	border: #91c0e3 1px solid; 
+	color: #004779;
+}
+
+.SelectStyle_Edit {
+	border: #91c0e3 1px solid; 
+	color: #004779;
+}
+
+.SelectStyle_City {
+	border: #91c0e3 1px solid; 
+	color: #004779;
+	font-size:10pt;
+	width:100px 
+}
+
+.MoveButtonStyle{
+	height: 20px;
+	width: 20px;
+	font-family: Webdings;
+	background-color: #dbecf8;
+	border: 1px solid #2886c5;
+	color: #2886c5;
+	
+}
+
+.DetailBlock {
+	width: 220px;
+	height: 35px;
+	line-height: 18px;
+	float: left;
+}
+
+.FileDetailBlock {
+	height: 35px;
+	line-height: 18px;
+	float: left;
+}
+
+.DetailBlock img {
+	margin-bottom: -3px;
+}
+
+#PageSelectorSelectorArea {
+	float: right;
+}
+
+#PageSelectorMemo {
+	float: left;
+	padding-top: 5px;
+	line-height: 18px;
+}
+
+.PageSelectorSelected {
+	color: #FF0000;
+}
+
+#PageSelectorHead {
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	font-family: webdings;
+	background: url(images/pageSelectorBefore_bg.gif) no-repeat;
+	background-position: 0 1px;
+}
+
+#PageSelectorHeadOut{
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	padding-right:1px;
+	display: inline-block;
+	font-family: webdings;
+	background: url(images/pageSelectorBeforeOut.gif) no-repeat;
+	background-position: 0 1px;
+}
+
+#PageSelectorEnd {
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	font-family: webdings;
+	background: url(images/pageSelectorNext_bg.gif) no-repeat;
+	background-position: 0 1px;
+}
+
+#PageSelectorEndOut {
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	font-family: webdings;
+	background: url(images/pageSelectorNextOut_bg.gif) no-repeat;
+	background-position: 0 1px;
+}
+
+#PageSelectorNum {
+	margin: 0 auto;
+	text-align: center;
+	background: url(images/pageSelector_bg.gif) no-repeat;
+	background-position: 0 3px;
+	padding-top: 4px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-family: ËÎÌו;
+}
+
+#PageSelectorBar input {
+	height: 18px;
+	width: 20px;
+	font-family: ËÎÌו;
+	border: 1px solid #005791;
+}
+
+#PageSelectorBar A:link {
+	COLOR: #005791; TEXT-DECORATION: none;
+}
+
+#PageSelectorBar A:visited {
+	COLOR: #005791; TEXT-DECORATION: none;
+}
+
+#PageSelectorBar A:active {
+	COLOR: #005791; TEXT-DECORATION: none;
+}
+
+#PageSelectorBar A:hover {
+	COLOR: #005791; TEXT-DECORATION: none;
+}
+
+#Calendar {
+	scrolling: no;
+	border:1px solid #EEEEEE;
+	position: absolute;
+	width: 160px; 
+	height: 140px;
+	z-index: 200; 
+	filter: progid:DXImageTransform.Microsoft.Shadow(direction=135,color=#dddddd,strength=5);
+}
+
+.Time_Header {
+	width: 160px;
+	height: 25px;
+	background-color: #f3f4f6;
+	color: #0b333c;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	line-height: 25px;
+	border-bottom: 1px solid #b7babc;
+}
+
+.Time_lastMonth {
+	float: left;
+	cursor: pointer;
+	width: 20px;
+}
+
+.Time_nextMonth {
+	float: right;
+	cursor: pointer;
+	width: 20px;
+}
+
+.Time_title {
+	float:left;
+	width: 30px;
+	text-align: right;
+}
+
+#ChangeYear td {
+	padding-bottom: 2px;
+	cursor: pointer;
+}
+
+.inputdate {
+	border:#7287c6 1px solid;
+	font-size: 13px;
+	font-style: normal;
+	height: 16px;
+}
+
+#Time_Date {
+	background: #ffffff;
+	color: #2b333c;
+	font-size: 13px;
+}
+
+#Time_Date td {
+	cursor: pointer;
+}
+
+.SelectedDate {
+	background: #818181;
+	color: #ffffff;
+}
+
+#Time_Tail {
+	float: right; 
+	padding-right: 10px; 
+	height:20px;
+	cursor: pointer;
+}
+
+.updownStyle {
+	width: 15px;
+	height: 7px;
+	font-size: 6Pt;
+}
+
+.TdBlue {
+	BACKGROUND-COLOR: blue;
+}
+
+.Move_font {
+	font-weight: normal;
+	font-family: Webdings;
+	color: #46A523;
+}
+
+.DotButton {
+	background: url(images/func_btn_bg_nobottom.gif) repeat-x;
+	border: 1px solid #87a3c1;
+	color: #004a7d;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 1px;
+	cursor: pointer;
+}
+
+.div1Style{
+	width: 100px;
+	COLOR: #ffffff;
+	Text-ALIGN: left;
+	background:#4891c6;
+	padding-left:15px;
+	Height:auto;
+	border-top: #22BCEE 1px solid;
+	border-left:#22BCEE 1px solid;
+	border-right:#22BCEE 1px solid;
+}
+
+.ulStyle{
+	MARGIN: 0;
+	LIST-STYLE-TYPE: none;
+	PADDING-LEFT: 0;
+	background: #8EC4E9;
+	text-align:left;
+}
+
+.liStyle{
+	border-bottom: #22BCEE 1px solid;
+	PADDING-LEFT: 5px; 
+	height:20px;
+	width:100%;
+	line-height:20px;
+}
+
+.InputList {
+	padding-top: 5px;
+	line-height: 20px;
+}
+
+.FontBeforeLine {
+	margin-left: 5px;
+	background: url(images/line.gif) repeat-x;
+	background-position: 0 10px;
+	line-height: 20px;
+	text-align: right;
+	width: 85%;
+	float: left;
+	margin-right: 5px;
+	height: 30px;
+}
+
+.TagItemBtnStyle {
+	border-left: 1px solid #87a3c1;
+	border-right: 1px solid #87a3c1;
+	border-top: 1px solid #87a3c1;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff,endcolorstr=#c5e7ff,gradientType=0);
+	color: #004a7d;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	margin-left: 3px;
+	margin-right: 3px;
+	cursor: pointer;
+	float: left;
+}
+

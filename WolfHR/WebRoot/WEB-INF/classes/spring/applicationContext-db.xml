@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                           http://www.springframework.org/schema/aop 
+                           http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                           http://www.springframework.org/schema/tx 
+                           http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+     <!-- 
+     	导入类扫描的注解解析器和事务的注解解析器
+      -->              
+      <context:component-scan base-package="com.wolf.hr"></context:component-scan>
+      <tx:annotation-driven transaction-manager="transactionManager"/>
+      <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+      		<property name="sessionFactory">
+      			<ref bean="sessionFactory"/>
+      		</property>
+      </bean>
+      
+      <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<!-- 配置连接池的初始值 -->
+		<property name="initialSize" value="1" />
+		<!-- 连接池的最大值 -->
+		<!-- <property name="maxActive" value="500"/> -->
+		<!-- 最大空闲时，当经过一个高峰之后，连接池可以将一些用不到的连接释放，一直减少到maxIdle为止 -->
+		<!-- <property name="maxIdle" value="2"/> -->
+		<!-- 当最小空闲时，当连接少于minIdle时会自动去申请一些连接 -->
+		<property name="minIdle" value="1" />
+		<property name="maxActive" value="100" />
+		<property name="maxIdle" value="20" />
+		<property name="maxWait" value="1000" />
+	</bean>
+	<!--创建Spring的SessionFactory工厂 -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	
+      <bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- 注入数据源 -->
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation">
+			<value>classpath:jbpm/jbpm.hibernate.cfg.xml</value>
+		</property>
+	</bean>
+      
+      <bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+      	<property name="sessionFactory">
+      		<ref bean="sessionFactory"/>
+      	</property>
+      </bean>
+	  <!-- 产生processEngine -->
+	<bean id="springHelper" class="org.jbpm.pvm.internal.processengine.SpringHelper">
+		<property name="jbpmCfg" value="jbpm/jbpm.cfg.xml"></property>
+	</bean>
+
+	<bean id="processEngine" factory-bean="springHelper"
+		factory-method="createProcessEngine" />
+</beans>

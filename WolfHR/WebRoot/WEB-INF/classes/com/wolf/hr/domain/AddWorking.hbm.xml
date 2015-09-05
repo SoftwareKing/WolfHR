@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wolf.hr.domain.AddWorking" table="addworking">
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="startDate" type="java.lang.String"></property>
+		<property name="content" type="java.lang.String" length="1000"></property>
+		<property name="startTime" type="java.lang.String"></property>
+		<property name="endTime" type="java.lang.String"></property>
+		<property name="month" type="java.lang.String"></property>
+		<property name="hours" type="java.lang.Double"></property>
+		<property name="agree" type="java.lang.Integer"></property>
+		<many-to-one name="user" class="com.wolf.hr.domain.User">
+			<column name="userId"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

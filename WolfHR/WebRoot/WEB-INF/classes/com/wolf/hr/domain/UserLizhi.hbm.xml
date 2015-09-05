@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wolf.hr.domain.UserLizhi" table="UserLizhi">
+		<id name="lzid" type="java.lang.Long" length="5">
+			<column name="lzid"></column>
+			<generator class="increment"></generator>
+		</id>
+	    <property name="Jobnumber" type="java.lang.String" length="20"></property>
+		<property name="username" type="java.lang.String" length="20"></property>
+		<property name="department" type="java.lang.String" length="20"></property>
+		<property name="post" type="java.lang.String" length="20"></property>
+		<property name="time" type="java.lang.String" ></property>
+		<property name="lizhixingzhi" type="java.lang.String" length="20"></property>
+		<property name="reason" type="java.lang.String" length="20"></property>
+		<property name="description" type="java.lang.String" length="100"></property>
+		
+		
+	</class>
+</hibernate-mapping>

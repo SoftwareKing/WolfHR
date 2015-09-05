@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="attendance" namespace="/" extends="checkdefault">
+  	<action name="attendanceAction_*" method="{1}" class="attendanceAction">
+  		<result name="addUI">/WEB-INF/jsp/attendance/add.jsp</result>
+  		<result name="actionList">/WEB-INF/jsp/attendance/list.jsp</result>
+  		<result name="userList">/WEB-INF/jsp/attendance/listByUser.jsp</result>
+  		<result name="action2action" type="redirect">attendanceAction_attendancesList.action</result>
+  	</action>	
+  	
+  </package>
+</struts>	

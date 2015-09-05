@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wolf.hr.domain.Approve" table="approve">
+		<id name="aid" type="java.lang.Long" length="5">
+			<column name="aid"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="approvename" type="java.lang.String" length="20"></property>
+		<property name="approvetime" type="java.util.Date"></property>
+		<property name="comment" type="java.lang.String" length="200"></property>
+		<property name="isapprove" type="java.lang.String" length="20"></property>
+		<many-to-one name="form" class="com.wolf.hr.domain.Form" column="fid"></many-to-one>
+	</class>
+</hibernate-mapping>
